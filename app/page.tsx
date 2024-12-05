@@ -1,14 +1,8 @@
 import Card from "./component/card";
 import arrowIcon from "@/public/resources/arrow up right.svg";
 import Image from "next/image";
-import clsx from "clsx";
 
 export default function Home() {
-  let tmp = [];
-  for (let i = 0; i < 5; i++) {
-    tmp.push(i);
-  }
-
   const team = [
     {
       name: "Liam Novak",
@@ -51,11 +45,10 @@ export default function Home() {
         <div className="text-4xl font-medium">Meet the brain</div>
         <div className="text-[#394150] sm:w-[480px]">
           We are proud to have them as part of our community and look forward to
-          continuing to push the boundaries of what's possible in the world of
+          continuing to push the boundaries of what&apos;s possible in the world of
           digital art.
         </div>
       </div>
-
       {team.map((member) => (
         <Card
           key={member.name}
